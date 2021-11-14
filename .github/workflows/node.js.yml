@@ -39,7 +39,8 @@ jobs:
 
       run: |
         npm install
-        npm run build:local 
+        node server.js
+        npm run build --if-present
         npm test
     - name: Login to Docker Hub
 
